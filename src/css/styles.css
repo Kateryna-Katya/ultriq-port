@@ -1014,8 +1014,10 @@ img {
     animation: spin 1s linear infinite;
 }
 
-/* Исправление для скрытия текста до загрузки JS */
-.split-text {
-    opacity: 0;
-    /* JS покажет их после загрузки */
+/* Добавить это для правильного разбиения */
+.word {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    /* Исправляет скачки высоты */
 }
