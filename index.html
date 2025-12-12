@@ -1,56 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/ultriq-port/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultriq-Port — AI-инструменты для реальных задач</title>
+  <meta name="description"
+    content="Практическое применение искусственного интеллекта в повседневной жизни. Технологии нового поколения, доступные каждому.">
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/ultriq-port/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ultriq-port/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/ultriq-port/assets/styles-VlRmu4Dx.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="header__container container">
+    <a href="#" class="header__logo">
+      Ultriq<span class="text-accent">.</span>Port
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#platform" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="#advantages" class="header__link">Возможности</a></li>
+        <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="#education" class="header__link">Обучение</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary">Связаться</a>
+      <button class="header__burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-
-    <main>
+    <main id="smooth-wrapper">
+      <div id="smooth-content">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="hero__canvas-container" id="hero-canvas"></div>
+    <div class="hero__container container">
+        <div class="hero__content">
+            <h1 class="hero__title split-text">
+                Воплотите мечты <br> в реальность с <span class="text-accent">AI</span>.
+            </h1>
+            <p class="hero__subtitle fade-in">
+                Технология нового поколения, доступная каждому. AI-инструменты для реальных задач, которые меняют
+                правила игры.
+            </p>
+            <div class="hero__btns fade-in">
+                <a href="#contact" class="btn btn--primary js-scroll-to">Начать сейчас</a>
+                <a href="#platform" class="btn btn--outline js-scroll-to">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero__scroll-indicator fade-in">
+        <span>Скрольте вниз</span>
+        <i data-lucide="chevron-down"></i>
+    </div>
+</section>
+
+<section class="section platform" id="platform">
+    <div class="container">
+        <div class="platform__grid">
+            <div class="platform__content fade-left">
+                <span class="section-tag">Платформа года</span>
+                <h2 class="section-title split-text">AI, который работает на вас. Просто.</h2>
+                <p class="section-text">
+                    Мы создали передовую цифровую инфраструктуру, где сложные технологии становятся доступными. Не нужно
+                    быть программистом, чтобы использовать инновации.
+                </p>
+                <ul class="platform__features">
+                    <li>
+                        <i data-lucide="check-circle" class="text-accent"></i>
+                        Легко разобраться без опыта
+                    </li>
+                    <li>
+                        <i data-lucide="check-circle" class="text-accent"></i>
+                        Пошаговый путь, понятный каждому
+                    </li>
+                    <li>
+                        <i data-lucide="check-circle" class="text-accent"></i>
+                        Платформа уже доступна в Европе
+                    </li>
+                </ul>
+            </div>
+            <div class="platform__visual fade-right">
+                <div class="glass-card">
+                    <img src="img/placeholder.png" alt="Интерфейс платформы" class="platform__img">
+                    <div class="glass-card__glow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section advantages" id="advantages">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title split-text">Откройте новые возможности</h2>
+            <p class="section-text fade-in">Стратегия роста на базе методологий, доказавших эффективность.</p>
+        </div>
+
+        <div class="advantages__grid">
+            <div class="adv-card fade-up">
+                <div class="adv-card__icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h3 class="adv-card__title">Быстрый и лёгкий старт</h3>
+                <p class="adv-card__text">Подключение занимает 2 минуты. Удобная адаптация без технических сложностей.
+                </p>
+            </div>
+            <div class="adv-card fade-up" data-delay="0.2">
+                <div class="adv-card__icon">
+                    <i data-lucide="trending-up"></i>
+                </div>
+                <h3 class="adv-card__title">Программа роста</h3>
+                <p class="adv-card__text">Используйте AI-решения для создания новых источников дохода и оптимизации
+                    рутины.</p>
+            </div>
+            <div class="adv-card fade-up" data-delay="0.4">
+                <div class="adv-card__icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <h3 class="adv-card__title">Экспертная поддержка</h3>
+                <p class="adv-card__text">Мы — ваш проверенный партнер. Поддержка по всем вопросам на всех этапах
+                    развития.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section innovations" id="innovations">
+    <div class="innovations__bg"></div>
+    <div class="container">
+        <div class="innovations__wrapper">
+            <div class="innovations__content fade-left">
+                <span class="section-tag text-accent">Инновации</span>
+                <h2 class="section-title split-text">Технология нового поколения</h2>
+                <p class="section-text">
+                    Наши решения меняют правила игры. Мы используем передовые алгоритмы для обработки данных,
+                    обеспечивая безопасность и скорость, недоступные ранее.
+                </p>
+                <div class="innovations__stats fade-in">
+                    <div class="stat-item">
+                        <span class="stat-number counter" data-target="99">0</span>%
+                        <span class="stat-label">Точность алгоритмов</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number counter" data-target="2">0</span>мин
+                        <span class="stat-label">Среднее время старта</span>
+                    </div>
+                </div>
+            </div>
+            <div class="innovations__visual fade-right">
+                <div class="cyber-sphere">
+                    <div class="cyber-sphere__ring"></div>
+                    <div class="cyber-sphere__core"></div>
+                    <img src="img/placeholder.png" alt="AI Core" class="cyber-sphere__img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section education" id="education">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title split-text">Практики применения ИИ</h2>
+            <p class="section-text fade-in">Узнайте, как технологии работают на вас уже сегодня.</p>
+        </div>
+
+        <div class="blog-grid">
+            <article class="blog-card fade-up">
+                <a href="#" class="blog-card__link">
+                    <div class="blog-card__image-wrapper">
+                        <img src="img/placeholder.png" alt="Blog post 1" class="blog-card__image">
+                        <span class="blog-card__category">Карьера</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Как AI меняет подход к развитию карьеры в 2025</h3>
+                        <span class="blog-card__read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+            </article>
+            <article class="blog-card fade-up" data-delay="0.2">
+                <a href="#" class="blog-card__link">
+                    <div class="blog-card__image-wrapper">
+                        <img src="img/placeholder.png" alt="Blog post 2" class="blog-card__image">
+                        <span class="blog-card__category">Стратегия</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">5 способов оценить перспективы проекта с помощью нейросетей</h3>
+                        <span class="blog-card__read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+            </article>
+            <article class="blog-card fade-up" data-delay="0.4">
+                <a href="#" class="blog-card__link">
+                    <div class="blog-card__image-wrapper">
+                        <img src="img/placeholder.png" alt="Blog post 3" class="blog-card__image">
+                        <span class="blog-card__category">Инструменты</span>
+                    </div>
+                    <div class="blog-card__content">
+                        <h3 class="blog-card__title">Топ AI-инструментов для старта без технических знаний</h3>
+                        <span class="blog-card__read-more">Читать далее <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="container">
+        <div class="contact__grid">
+            <div class="contact__info fade-left">
+                <h2 class="section-title split-text">Начать сейчас</h2>
+                <p class="section-text">
+                    Запросить доступ к платформе или получить бесплатную консультацию. Наши эксперты готовы ответить на
+                    все вопросы.
+                </p>
+
+                <div class="contact__trust-badges fade-in">
+                    <div class="trust-badge">
+                        <i data-lucide="shield"></i>
+                        <span>Безопасность данных</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i data-lucide="users"></i>
+                        <span>Доступно в UK & EU</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form-wrapper fade-right">
+                <form class="contact__form" id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Иван Петров" required>
+                        <span class="form-error" id="nameError">Введите имя</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="example@mail.com"
+                            required>
+                        <span class="form-error" id="emailError">Введите корректный email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Телефон</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="Только цифры"
+                            pattern="[0-9]+" required>
+                        <span class="form-error" id="phoneError">Введите телефон (только цифры)</span>
+                    </div>
+
+                    <div class="form-group captcha-group">
+                        <label for="captcha" class="form-label" id="captchaLabel">Сколько будет 3 + 5?</label>
+                        <input type="text" id="captcha" name="captcha" class="form-input" required>
+                        <span class="form-error" id="captchaError">Неверный ответ</span>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Я согласен с <a href="./privacy.html">политикой
+                                конфиденциальности</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary form-submit">
+                        <span>Отправить заявку</span>
+                        <div class="loader"></div>
+                    </button>
+
+                    <div class="form-message success" id="formSuccess">Спасибо! Данные успешно отправлены.</div>
+                    <div class="form-message error" id="formError">Ошибка отправки. Попробуйте позже.</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="#" class="footer__logo">
+          Ultriq<span class="text-accent">.</span>Port
+        </a>
+        <p class="footer__desc">
+          Передовая цифровая инфраструктура для тех, кто хочет использовать AI здесь и сейчас. Воплотите мечты в
+          реальность с технологиями нового поколения.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__list">
+          <li><a href="#platform" class="footer__link">Платформа</a></li>
+          <li><a href="#advantages" class="footer__link">Преимущества</a></li>
+          <li><a href="#innovations" class="footer__link">Инновации</a></li>
+          <li><a href="#education" class="footer__link">Блог</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Информация</h3>
+        <ul class="footer__list">
+          <li><a href="privacy.html" class="footer__link">Политика конфиденциальности</a></li>
+          <li><a href="cookies.html" class="footer__link">Cookies Policy</a></li>
+          <li><a href="terms.html" class="footer__link">Условия использования</a></li>
+          <li><a href="return.html" class="footer__link">Политика возврата</a></li>
+          <li><a href="disclaimer.html" class="footer__link">Отказ от ответственности</a></li>
+          <li><a href="personal-data-policy.html" class="footer__link">Обработка данных</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contacts">
+          <li>
+            <i data-lucide="map-pin"></i>
+            <span>22 Bishopsgate, London EC2N 4BQ, United Kingdom</span>
+          </li>
+          <li>
+            <i data-lucide="phone"></i>
+            <a href="tel:+44 20 5489 7856">+44 20 5489 7856</a>
+          </li>
+          <li>
+            <i data-lucide="mail"></i>
+            <a href="mailto:support@ultriq-port.blog">support@ultriq-port.blog</a>
+          </li>
+        </ul>
+        <div class="footer__note">
+          Предложение активно только в странах ЕС и UK.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Ultriq-Port. Все права защищены.</p>
+    </div>
   </div>
 </footer>
 
-
+<div class="cookie-popup" id="cookiePopup">
+  <div class="cookie-popup__content">
+    <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+        политике</a>.</p>
+    <button class="btn btn--primary btn--sm" id="cookieAccept">Принять</button>
+  </div>
+</div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   </body>
 </html>
