@@ -1021,3 +1021,92 @@ img {
     vertical-align: top;
     /* Исправляет скачки высоты */
 }
+/* --- Legal Pages Styles --- */
+.pages {
+    padding-top: 140px;
+    /* Отступ под фиксированный хедер */
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+.pages h1 {
+    font-family: var(--font-head);
+    font-size: 42px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pages h2 {
+    font-family: var(--font-head);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-accent);
+    /* Индиго акцент */
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.pages p {
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.pages ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+
+.pages li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.pages li::before {
+    content: "›";
+    /* Стильный маркер списка */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.pages strong {
+    color: var(--color-text);
+    /* Белый для важных слов */
+    font-weight: 600;
+}
+
+.pages a {
+    color: var(--color-accent);
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+    padding-bottom: 1px;
+    transition: var(--transition);
+}
+
+.pages a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+    .pages h1 {
+        font-size: 32px;
+    }
+
+    .pages h2 {
+        font-size: 20px;
+    }
+}
