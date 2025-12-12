@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/test-two/",
+    "build": "vite build --base=/ultriq-port/",
     "preview": "vite preview"
   },
   "devDependencies": {
